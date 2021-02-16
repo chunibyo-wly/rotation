@@ -1,3 +1,6 @@
 module.exports = {
-    outputDir:'./rotation'
+    outputDir:'./rotation',
+    publicPath: process.env.NODE_ENV === 'production'
+        ? '/rotation/'
+        : '/'
 }
